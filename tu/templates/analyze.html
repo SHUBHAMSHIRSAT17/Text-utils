@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+    <meta charset="UTF-8">
+    <title>ANALYZED TEXT</title>
+</head>
+<body>
+{% for params in params_list %}
+<h1>Your {{ params.purpose }} text has been analyzed successfully.</h1>
+    <pre>{{ params.analyzed_text }}</pre>
+{% endfor %}
+</body>
+</html>
+
+
+
+
+
+
